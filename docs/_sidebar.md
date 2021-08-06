@@ -6,7 +6,9 @@
 	- [5. 初次使用配置（需要更新）](manual/start/initial-configuration)
 	- [6. 升级（TODO）](manual/start/upgrade)
 	- [7. 网站备份（需要更新）](manual/start/backup)
-	- [7. 网站迁移（TODO）](manual/start/migration)
+	- [8. 网站迁移（TODO）](manual/start/migration)
+	- [9. 目录结构（TODO）](manual/start/directory-structure)
+	- [10. 常见问题](manual/start/faq)
 
 - [TODO](manual/todo)
 - [test](manual/test)
