@@ -1,4 +1,4 @@
-<img height="180px" style="border-radius: 5%" src="images/coverimg.png">
+<img height="180px" style="border-radius: 5%" src="static/images/coverimg.png">
 
 # 背Ta单词官方文档
 
