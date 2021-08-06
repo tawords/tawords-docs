@@ -6,10 +6,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="description" content="背Ta单词 官方文档">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		
+
 		<!-- 主题样式 -->
 		<link rel="stylesheet" href="static/docsify/lib/themes/vue.css">
-		
+
 		<link rel="shortcut icon" href="favicon.ico" />
 
 	</head>
@@ -47,7 +47,10 @@
 
 				// 启用相对路径
 				// relativePath: true,
-
+				
+				// 执行文档里的 script 标签里的脚本，只执行第一个 script
+				executeScript: true,
+				
 				// 小屏设备下合并导航栏到侧边栏。
 				mergeNavbar: true,
 
@@ -195,11 +198,10 @@
 		<script src="static/docsify/lib/plugins/docsify-pagination@2.6.1/docsify-pagination.min.js"></script>
 
 		<!-- drawio -->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/docsify-drawio/viewer.min.js"></script> -->
-		<script src="static/docsify/lib/plugins/docsify-drawio/viewer.min.js"></script>
-		<!-- <script src='https://cdn.jsdelivr.net/npm/docsify-drawio/drawio.js'></script> -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/docsify-drawio/viewer.min.js"></script>
+		<script src='https://cdn.jsdelivr.net/npm/docsify-drawio/drawio.js'></script> -->
+		<!-- <script src="static/docsify/lib/plugins/docsify-drawio/viewer.min.js"></script> -->
 		<script src='static/docsify/lib/plugins/docsify-drawio/drawio.js'></script>
-
 
 		<!-- docsify-tabs (latest v1.x.x) -->
 		<!-- https://jhildenbiddle.github.io/docsify-tabs/#/ -->

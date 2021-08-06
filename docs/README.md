@@ -1,6 +1,6 @@
 
 <!-- 背Ta单词 简介 -->
-[plugin-structures](include/intro.md ':include')
+[intro](include/intro.md ':include')
 
 ## 传送门
 
