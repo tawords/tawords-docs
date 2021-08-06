@@ -1,0 +1,3 @@
+- [ ] Tests
+- [ ] Example
+- [x] ~Documentation~

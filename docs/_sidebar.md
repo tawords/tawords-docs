@@ -1,0 +1,12 @@
+- **一、快速开始**
+	- [1. 简介](manual/start/introduction)
+	- [2. 环境要求](manual/start/requirements)
+	- [3. 下载安装（需要更新）](manual/start/install)
+	- [4. 数据库安装（需要更新）](manual/start/database)
+	- [5. 初次使用配置（需要更新）](manual/start/initial-configuration)
+	- [6. 升级（TODO）](manual/start/upgrade)
+	- [7. 网站备份（需要更新）](manual/start/backup)
+	- [7. 网站迁移（TODO）](manual/start/migration)
+
+- [TODO](manual/todo)
+- [test](manual/test)

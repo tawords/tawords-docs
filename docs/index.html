@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>背Ta单词 官方文档</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="背Ta单词 官方文档">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+		<link rel="shortcut icon" href="favicon.ico" />
+
+	</head>
+	<body>
+		<div id="app">加载中...</div>
+		<script>
+			window.$docsify = {
+				el: '#app', // docsify 初始化挂载元素
+
+				name: '背Ta单词 官方文档',
+				repo: '',
+
+				// 显示侧边栏
+				loadSidebar: true,
+
+				// 显示导航栏
+				loadNavbar: true,
+
+				subMaxLevel: 2, // 最大支持渲染的标题层级
+
+				// 切换页面后自动跳转到页面顶部
+				auto2top: true,
+
+				// 设置封面
+				coverpage: true,
+
+				// logo
+				// logo: 'img/logo.png',
+
+				// 主题色
+				themeColor: '#795548',
+
+				// 同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题。
+				autoHeader: true,
+
+				// 启用相对路径
+				// relativePath: true,
+
+				// 小屏设备下合并导航栏到侧边栏。
+				mergeNavbar: true,
+
+				// 404页
+				notFoundPage: true,
+
+				// 更新时间格式
+				formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
+
+				// 让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间。当你使用 固定页头 布局时这个选项很有用，可以让你的锚点对齐标题栏。
+				topMargin: 45, // default: 0
+
+				// 搜索
+				search: {
+					maxAge: 1000, // 86400000, // 过期时间，单位毫秒，默认一天
+					paths: [],
+					placeholder: '搜索',
+					noData: '没有找到结果',
+					depth: 3, // 搜索标题的最大层级, 1 - 6
+					hideOtherSidebarContent: true, // 是否隐藏其他侧边栏内容
+				},
+
+				// 字数统计
+				count: {
+					countable: true,
+					fontsize: '0.9em',
+					color: 'rgb(90,90,90)',
+					language: 'chinese'
+				},
+
+				pagination: {
+					previousText: '上一章节',
+					nextText: '下一章节',
+					crossChapter: true,
+					crossChapterText: true,
+				},
+
+				// plugins: [
+				// 	// livere评论：https://livere.com/insight/communite
+				// 	function(hook, vm) {
+				// 		// load livere
+				// 		hook.beforeEach(function(content) {
+				// 			var comment =
+				// 				"<div id='lv-container' data-id='city' data-uid='MTAyMC81MzY5NS8zMDE2OA=='></div>\n\n----\n"
+				// 			return content + comment;
+				// 		});
+
+				// 		hook.doneEach(function() {
+				// 			(function(d, s) {
+				// 				var j, e = d.getElementsByTagName(s)[0];
+				// 				if (typeof LivereTower === 'function') {
+				// 					return;
+				// 				}
+				// 				j = d.createElement(s);
+				// 				j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+				// 				j.async = true;
+				// 				e.parentNode.insertBefore(j, e);
+				// 			})(document, 'script');
+				// 		});
+				// 	},
+				// ],
+
+				// docsify-dark-mode
+				// darkMode: {
+				// 	dark: {
+				// 		background: "#1c2022",
+				// 		toggleBtnBg: "#34495e",
+				// 		textColor: "#b4b4b4"
+				// 	},
+				// 	light: {
+				// 		background: "white",
+				// 		toggleBtnBg: "var(--theme-color)",
+				// 		textColor: "var(--theme-color)"
+				// 	}
+				// },
+
+
+				// 页脚 load from _footer.md
+				loadFooter: true,
+
+				// 阅读进度条
+				progress: {
+					position: "top", // 'top' / 'bottom'
+					color: "var(--theme-color,#42b983)",
+					height: "3px",
+				},
+
+				// drawio       You just have to copy it to Your own html File
+				markdown: {
+					renderer: {
+						code: function(code, lang) {
+							if (lang === 'drawio') {
+								if (window.drawioConverter) {
+									console.log('drawio 转化中')
+									return window.drawioConverter(code)
+								} else {
+									return `<div class='drawio-code'>${code}</div>`
+								}
+							} else {
+								return this.origin.code.apply(this, arguments);
+							}
+						}
+					}
+				},
+			}
+		</script>
+		<!-- Docsify v4 -->
+		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+		<!-- 修改时间 -->
+		<script>
+			// Docsify plugin functions
+			function auto_add_update_time_plugin(hook, vm) {
+				hook.beforeEach(function(content) {
+					var updateHTML = "<p align=\"right\" style=\"opacity: .6;\">更新时间：{docsify-updated}</p>\n\n"
+					content = content + updateHTML
+					return content;
+				});
+			}
+
+			// Docsify plugin
+			window.$docsify.plugins = [].concat(auto_add_update_time_plugin, window.$docsify.plugins);
+		</script>
+
+		<!-- plugins -->
+		<!-- 搜索 -->
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+		<!-- 复制到剪贴板 -->
+		<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+		<!-- 字数统计 -->
+		<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+		<!-- footer plugin -- latest version -->
+		<script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+
+		<!-- 上一章 下一章 -->
+		<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+		<!-- drawio -->
+		<script src="https://cdn.jsdelivr.net/npm/docsify-drawio/viewer.min.js"></script>
+		<script src='https://cdn.jsdelivr.net/npm/docsify-drawio/drawio.js'></script>
+
+
+		<!-- docsify-tabs (latest v1.x.x) -->
+		<!-- https://jhildenbiddle.github.io/docsify-tabs/#/ -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
+
+		<!-- docsify plugin: Flexible Alerts -->
+		<!-- https://github.com/fzankl/docsify-plugin-flexible-alerts -->
+
+		<!-- 常见术语表 docsify-glossary -->
+		<!-- <script src="//unpkg.com/docsify-glossary/dist/docsify-glossary.min.js"></script> -->
+
+		<!-- Table of Contents -->
+		<!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+		<script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+		<style>
+			.nav {
+				padding-top: 40px;
+			}
+
+			@media screen and (max-width: 1300px) {
+				.nav {
+					display: none;
+				}
+			}
+		</style>
+		<script>
+			// Table of Contents
+			window.$docsify.toc = {
+				scope: '.markdown-section',
+				headings: 'h1, h2, h3, h4, h5, h6',
+				title: '目录',
+			}
+		</script> -->
+
+		<!-- docsify-dark-mode -->
+		<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
+		<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script> -->
+
+		<!-- 阅读进度条插件 -->
+		<script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+
+	</body>
+</html>
