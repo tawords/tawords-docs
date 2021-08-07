@@ -14,11 +14,44 @@
 
 		<style>
 			/* 首页封面背景渐变色样式 */
-			.cover.show { background: linear-gradient(to left bottom, hsl(189, 100%, 85%) 0%,hsl(232, 100%, 85%) 100%)!important; }
+			.cover.show {
+				background: linear-gradient(to left bottom, hsl(189, 100%, 85%) 0%, hsl(232, 100%, 85%) 100%) !important;
+			}
+
 			/* 左侧侧边栏下面多留出一些空白 */
-			.sidebar-nav { padding-bottom: 60vh!important; }
+			.sidebar-nav {
+				padding-bottom: 80vh !important;
+			}
+
 			/* 左侧侧边栏缩进更明显一些 */
-			.sidebar ul { margin-left: 23px!important; }
+			.sidebar ul {
+				margin-left: 23px !important;
+			}
+
+			/*  */
+			@media screen and (max-width: 768px) {
+				.sidebar-toggle {
+					/* position: relative; */
+					padding: 10px;
+					/* width: auto; */
+
+					bottom: auto;
+					top: 0;
+				}
+
+				.sidebar {
+					margin-top: 38px;
+				}
+
+				/* 手机屏幕不显示导航栏 */
+				nav {
+					display: none;
+				}
+			}
+
+			.sidebar-toggle {
+				width: auto;
+			}
 		</style>
 	</head>
 	<body>
@@ -36,6 +69,8 @@
 				// 显示导航栏
 				loadNavbar: true,
 
+				maxLevel: 6, // 默认值: 6 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
+				
 				subMaxLevel: 3, // 最大支持渲染的标题层级
 
 				// 切换页面后自动跳转到页面顶部
@@ -44,7 +79,7 @@
 				// 设置封面
 				coverpage: true,
 
-				// logo
+				// 文档左上角logo
 				// logo: 'img/logo.png',
 
 				// 主题色
@@ -55,12 +90,12 @@
 
 				// 启用相对路径
 				relativePath: true,
-				
+
 				// 执行文档里的 script 标签里的脚本，只执行第一个 script
 				executeScript: true,
-				
+
 				// 小屏设备下合并导航栏到侧边栏。
-				mergeNavbar: true,
+				// mergeNavbar: true,
 
 				// 404页
 				notFoundPage: true,
@@ -75,7 +110,7 @@
 				search: {
 					maxAge: 1000, // 86400000, // 过期时间，单位毫秒，默认一天
 					paths: [],
-					placeholder: '搜索',
+					placeholder: ' 在文档中搜索... ',
 					noData: '没有找到结果',
 					depth: 6, // 搜索标题的最大层级, 1 - 6
 					hideOtherSidebarContent: true, // 是否隐藏其他侧边栏内容
@@ -96,30 +131,69 @@
 					crossChapterText: true,
 				},
 
-				// plugins: [
-				// 	// livere评论：https://livere.com/insight/communite
-				// 	function(hook, vm) {
-				// 		// load livere
-				// 		hook.beforeEach(function(content) {
-				// 			var comment =
-				// 				"<div id='lv-container' data-id='city' data-uid='MTAyMC81MzY5NS8zMDE2OA=='></div>\n\n----\n"
-				// 			return content + comment;
-				// 		});
+				plugins: [
+					// 添加文档修改时间
+					function(hook, vm) { // auto_add_update_time_plugin
+						hook.beforeEach(function(content) {
+							var updateHTML = '<p align="right" style="opacity: 0.6;">更新时间：{docsify-updated}</p>'
+							content = content + updateHTML
+							return content;
+						});
+					},
 
-				// 		hook.doneEach(function() {
-				// 			(function(d, s) {
-				// 				var j, e = d.getElementsByTagName(s)[0];
-				// 				if (typeof LivereTower === 'function') {
-				// 					return;
-				// 				}
-				// 				j = d.createElement(s);
-				// 				j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-				// 				j.async = true;
-				// 				e.parentNode.insertBefore(j, e);
-				// 			})(document, 'script');
-				// 		});
-				// 	},
-				// ],
+					// 左侧菜单滚动到激活的位置
+					function(hook, vm) {
+						scrollToHandler = function() {
+							try {
+								let activeMenuItem = document.querySelector("ul > li.active")
+								let sidebar = document.querySelector("aside.sidebar")
+								let activeMenuItemTop = activeMenuItem.getBoundingClientRect().top
+								let sidebarHeight = sidebar.getBoundingClientRect().height
+								let scrollto = sidebar.scrollTop + activeMenuItemTop - sidebarHeight * (1 -
+									0.618) /* 黄金分割比 */
+								// sidebar.scrollTo(0, scrollto)
+								sidebar.scrollTo({
+									top: scrollto,
+									behavior: "smooth"
+								})
+
+								// console.log("\n\n")
+								// console.log("activeMenuItem", activeMenuItem)
+								// console.log("sidebar", sidebar)
+								// console.log("activeMenuItemTop", activeMenuItemTop)
+								// console.log("sidebarHeight", sidebarHeight)
+								// console.log("sidebar.scrollTop", sidebar.scrollTop)
+								// console.log("scrollto", scrollto)
+							} catch (err) {
+								console.log(err)
+							}
+						}
+						hook.doneEach(scrollToHandler);
+					},
+
+					// // // livere评论：https://livere.com/insight/communite
+					// function(hook, vm) {
+					// 	// load livere
+					// 	hook.beforeEach(function(content) {
+					// 		var comment =
+					// 			"<div id='lv-container' data-id='city' data-uid='MTAyMC81MzY5NS8zMDE2OA=='></div>\n\n----\n"
+					// 		return content + comment;
+					// 	});
+
+					// 	hook.doneEach(function() {
+					// 		(function(d, s) {
+					// 			var j, e = d.getElementsByTagName(s)[0];
+					// 			if (typeof LivereTower === 'function') {
+					// 				return;
+					// 			}
+					// 			j = d.createElement(s);
+					// 			j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+					// 			j.async = true;
+					// 			e.parentNode.insertBefore(j, e);
+					// 		})(document, 'script');
+					// 	});
+					// },
+				],
 
 				// docsify-dark-mode
 				// darkMode: {
@@ -135,16 +209,15 @@
 				// 	}
 				// },
 
-
 				// 页脚 load from _footer.md
 				loadFooter: true,
 
-				// 阅读进度条
-				progress: {
-					position: "top", // 'top' / 'bottom'
-					color: "var(--theme-color,#42b983)",
-					height: "3px",
-				},
+				// // 阅读进度条
+				// progress: {
+				// 	position: "top", // 'top' / 'bottom'
+				// 	color: "var(--theme-color,#42b983)",
+				// 	height: "3px",
+				// },
 
 				// drawio       You just have to copy it to Your own html File
 				markdown: {
@@ -167,21 +240,6 @@
 		</script>
 		<!-- Docsify v4 -->
 		<script src="static/docsify/docsify@4.js"></script>
-
-		<!-- 修改时间 -->
-		<script>
-			// Docsify plugin functions
-			function auto_add_update_time_plugin(hook, vm) {
-				hook.beforeEach(function(content) {
-					var updateHTML = "<p align=\"right\" style=\"opacity: .6;\">更新时间：{docsify-updated}</p>\n\n"
-					content = content + updateHTML
-					return content;
-				});
-			}
-
-			// Docsify plugin
-			window.$docsify.plugins = [].concat(auto_add_update_time_plugin, window.$docsify.plugins);
-		</script>
 
 		<!-- plugins -->
 		<!-- 搜索 -->
@@ -248,9 +306,8 @@
 		<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
 		<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script> -->
 
-		<!-- 阅读进度条插件 -->
+		<!-- 阅读进度条插件(与滚动右侧文档左侧对应子目录激活有冲突) -->
 		<!-- <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script> -->
-		<script src="static/docsify/lib/plugins/docsify-progress@1.0.3/progress.js"></script>
-
+		<!-- <script src="static/docsify/lib/plugins/docsify-progress@1.0.3/progress.js"></script> -->
 	</body>
 </html>

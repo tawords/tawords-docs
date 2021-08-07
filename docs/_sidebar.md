@@ -26,15 +26,33 @@
         - [通知](/manual/api/frontend-interface/Notice)
 	- [4. 后端Api接口（待完善）](/manual/api/backend-interface)
 	- [5. 接口模板](/manual/api/interface-template)
-	- 
-- **四、应用开发文档**
-<!--	- [1. 简介](/manual/app-developer/introduction)
-	- [2. 全局状态码](/manual/app-developer/status-code)
-	- 3\. 前端Api接口（撰写中）
-	- [4. 后端Api接口（待完善）](/manual/app-developer/backend-interface)
-	- [5. 接口模板](/manual/app-developer/interface-template)
-	- [1. 简介](/manual/app-developer/introduction) -->
 
+- **四、代码规范**
+	- [【TODO】](/manual/standard/xxx)
 
-- [TODO](/manual/todo)
-- [test](/manual/test)
+- **五、应用开发文档**
+	- [1. 开始](/manual/app-developer/start)
+	- [2. 文件及代码结构（待完善）](/manual/app-developer/file-structure)
+	- [3. 插件开发（待完善）](/manual/app-developer/plugin/overview)
+	- [5. 主题开发（待完善）](/manual/app-developer/theme/overview)
+	- [6. 应用发布与更新](/manual/app-developer/release-and-update)
+	- [7. 下架应用（待完善）](/manual/app-developer/downshelf)
+
+- **六、关于**
+	- [发行版本](/manual/about/version/release)
+	- [更新日志](/manual/about/version/changelog)
+	- [联系我们](/manual/about/contact)
+	- [开发团队 & 参与贡献者名单](/manual/about/contributors)
+	- [特别鸣谢](/manual/about/acknowledgement)
+	- [免责声明](/manual/about/disclaimer)
+	- [使用的开源组件列表](/manual/about/open-source-project)
+	- [关于我们](/manual/about/about-us)
+	- [开源许可证（GPL-3.0）](/manual/about/LICENSE/GPL-3.0)
+		- [更好的理解 GPL-3.0 开源许可证](/manual/about/LICENSE/have-a-better-understanding-of-GPL-3.0)
+	- [使用的第三方接口](/manual/about/third-party-interface)
+
+- **七、内部开发文档**
+
+- **八、其他**
+    - [TODO](/manual/todo)
+    - [test](/manual/test)
