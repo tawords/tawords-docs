@@ -47,8 +47,8 @@
 	- [免责声明](/manual/about/disclaimer)
 	- [使用的开源组件列表](/manual/about/open-source-project)
 	- [关于我们](/manual/about/about-us)
-	- [开源许可证（GPL-3.0）](/manual/about/LICENSE/GPL-3.0)
-		- [更好的理解 GPL-3.0 开源许可证](/manual/about/LICENSE/have-a-better-understanding-of-GPL-3.0)
+	- [开源许可证（GPL-3.0）](/manual/about/License/GPL-3.0)
+		- [更好的理解 GPL-3.0 开源许可证](/manual/about/License/have-a-better-understanding-of-GPL-3.0)
 	- [使用的第三方接口](/manual/about/third-party-interface)
 
 - **七、内部开发文档**
