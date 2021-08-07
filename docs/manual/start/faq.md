@@ -1,16 +1,16 @@
 ## 登录验证码未加载出来
 
-### 问题描述
+#### 问题描述
 
 程序安装后登陆时的验证码无法绘制，报 [Warning:  Wrong parameter count for imagettftext() in xxx/captcha.php 错误]
 
 
-### 问题出现原因
+#### 问题出现原因
 
 安装路径中，出现空格、中文字符以及特殊符号，导致调用GD库时无法找到字体文件。
 
 
-### 解决方案
+#### 解决方案
 
 1. 将程序安装在无空格、中文字符以及特殊符号的路径下（推荐）
 2. 如果不得不安装在特定目录下，请将 `static/font/geneva.ttf` 字体文件复制一份至符合上述要求的路径，然后按照下方说明修改 `api/captcha.php` 文件。
@@ -29,12 +29,12 @@ imagettftext($image, $fontsize, 0, $x, $y, $fontcolor, '复制出来的字体所
 
 ---------------
 
-# 无法创建SQLite3数据库
+## 无法创建SQLite3数据库
 
 > 这个问题一般出现在Windows环境下
 
 
-### 解决方案
+#### 解决方案
 
 需要修改php.ini文件
 

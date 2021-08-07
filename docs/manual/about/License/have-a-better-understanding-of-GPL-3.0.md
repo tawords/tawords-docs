@@ -1,5 +1,6 @@
 !> **项目许可证以项目中LICENSE文件为准，本页内容仅作为参考，不具有法律效应**
-> 本页内容旨在让您更加了解 `GPL-3.0 许可证` 的相关内容，其中中文版本是来源于网络的非正式翻译版本。
+
+?> 本页内容旨在让您更加了解 `GPL-3.0 许可证` 的相关内容，其中中文版本是来源于网络的非正式翻译版本。
 
 GNU General Public License v3.0
 
@@ -383,17 +384,17 @@ To do so, attach the following notices to the program. It is safest to attach th
 
     <one line to give the program's name and a brief idea of what it does.>
     Copyright (C) <year>  <name of author>
-
+    
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
-
+    
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
+    
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 Also add information on how to contact you by electronic and paper mail.

@@ -1,4 +1,6 @@
-联系邮箱：`admin@mail.only4.work`
+
+<!-- 背Ta单词 简介 -->
+[联系邮箱](../../include/email.md ':include')
 
 如果您发现了Bug，请备注`BUG`
 如果您有更好的电子或建议，请备注`建议`

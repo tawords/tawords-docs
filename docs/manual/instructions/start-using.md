@@ -2,8 +2,8 @@
 
 ## 访问网站
 
-使用浏览器打开 `https://reciteword.com/`
-
+<!-- 访问网站 -->
+[website-home-url](../../include/website-home-url.md ':include')
 
 ## 功能介绍
 
