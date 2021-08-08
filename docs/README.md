@@ -1,6 +1,16 @@
 
 ?> 目前项目还在开发中，请过段时间再来看吧。
 
+<p align="center">
+  <!-- <a href="https://tawords.com" target="_blank"> -->
+    <img alt="背Ta单词 | tawords" src="/static/images/tawords_logo_2000x2000_1.png" height="128">
+  <!-- </a> -->
+</p>
+
+<p align="center">
+  <b>背Ta单词</b>
+</p>
+
 ------------
 
 <!-- 背Ta单词 简介 -->
@@ -12,12 +22,12 @@
 
 | 背Ta单词 | 网址 |
 |------|------|
+| 代码仓库 |  <a href="https://gitee.com/only4/tawords/" target="_blank">Gitee（推荐）</a>  <a href="https://github.com/only4/tawords/" target="_blank">GitHub（暂未上线）</a> |
+| 项目主页（暂未上线） | <a href="https://tawords.com/" target="_blank">tawords.com</a> |
+| 应用中心（暂未上线） | <a href="https://app.tawords.com/" target="_blank">app.tawords.com</a> |
+| 演示站点（暂未上线） | <a href="https://demo.tawords.com/" target="_blank">demo.tawords.com</a> |
+| 社区（暂未上线） | <a href="https://club.tawords.com/" target="_blank">club.tawords.com</a> |
 | 官方运营网站 | <a href="https://reciteword.com/" target="_blank">reciteword.com</a> |
-| 项目主页（暂未上线） | <a href="https://betadc.com/" target="_blank">betadc.com</a> |
-| 应用中心（暂未上线） | <a href="https://app.betadc.com/" target="_blank">app.betadc.com</a> |
-| 演示站点（暂未上线） | <a href="https://demo.betadc.com/" target="_blank">demo.betadc.com</a> |
-| 社区（暂未上线） | <a href="https://club.betadc.com/" target="_blank">club.betadc.com</a> |
-| 项目仓库 - Gitee（推荐） |  <a href="https://gitee.com/only4/tawords/" target="_blank">gitee.com/only4/tawords</a> |
 
 ------------
 
