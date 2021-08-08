@@ -1,6 +1,6 @@
 # 背Ta单词 官方文档
 
-这是背Ta单词官方文档的Git仓库。想要查看文档，请访问[https://docs.reciteword.com/](https://docs.reciteword.com/)。
+这是背Ta单词官方文档的Git仓库。想要查看文档，请访问[https://docs.betadc.com/](https://docs.betadc.com/)。
 
 本文档基于 *[docsify](https://docsify.js.org/#/)* 构建。
 
@@ -22,7 +22,7 @@
 
 # BTaDC Documentation
 
-This is the Git repo for BTaDC documentation. To view the documentation, visit [https://docs.reciteword.com/](https://docs.reciteword.com/).
+This is the Git repo for BTaDC documentation. To view the documentation, visit [https://docs.betadc.com/](https://docs.betadc.com/).
 
 Powered by *[docsify](https://docsify.js.org/#/)*.
 

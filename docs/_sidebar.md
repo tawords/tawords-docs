@@ -39,16 +39,26 @@
 	- [7. 下架应用（待完善）](/manual/app-developer/downshelf)
 
 - **六、关于**
-	- [发行版本](/manual/about/version/release)
-	- [更新日志](/manual/about/version/changelog)
+<!-- 关于我们 -->
+	- [关于我们](/manual/about/about-us)
 	- [联系我们](/manual/about/contact)
 	- [开发团队 & 参与贡献者名单](/manual/about/contributors)
+	- 
+<!-- 关于项目 -->
+	- [发行版本](/manual/about/version/release)
+	- [更新日志](/manual/about/version/changelog)
+
 	- [特别鸣谢](/manual/about/acknowledgement)
-	- [免责声明](/manual/about/disclaimer)
 	- [使用的开源组件列表](/manual/about/open-source-project)
-	- [关于我们](/manual/about/about-us)
-	- [开源许可证（GPL-3.0）](/manual/about/License/GPL-3.0)
-		- [更好的理解 GPL-3.0 开源许可证](/manual/about/License/have-a-better-understanding-of-GPL-3.0)
+	- 法律声明及服务协议
+    	- [开源许可证 GPL-3.0](/manual/about/License/GPL-3.0)
+    		- [更好的理解 GPL-3.0](/manual/about/License/have-a-better-understanding-of-GPL-3.0)
+        - 法律声明 policy
+            - [版权声明 Copyright](/manual/about/policy/copyright)
+            - [免责声明 Disclaimer](/manual/about/policy/disclaimer)
+        - 服务协议 agreement
+            - [服务条款 Terms of use](/manual/about/agreement/terms-of-use)
+            - [隐私政策 Privacy policy](/manual/about/agreement/privacy-policy)
 	- [使用的第三方接口](/manual/about/third-party-interface)
 
 - **七、内部开发文档**

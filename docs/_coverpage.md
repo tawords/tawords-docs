@@ -7,8 +7,8 @@
 
 <h3>【温馨提示】本文档目前正处在撰写阶段，部分内容还不准确和完整，我们正在加紧撰写。</h3>
 
-[![Stars](https://gitee.com/only4/recite-words/badge/star.svg?theme=dark)](https://gitee.com/only4/recite-words/stargazers)
-[![Forks](https://gitee.com/only4/recite-words/badge/fork.svg?theme=dark)](https://gitee.com/only4/recite-words/members)
+[![Stars](https://gitee.com/only4/tawords/badge/star.svg?theme=dark)](https://gitee.com/only4/recite-words/stargazers)
+[![Forks](https://gitee.com/only4/tawords/badge/fork.svg?theme=dark)](https://gitee.com/only4/recite-words/members)
 [![License](https://img.shields.io/badge/License-GPL--3.0-breghtgreen)](https://gitee.com/only4/recite-words/blob/develop/LICENSE)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 

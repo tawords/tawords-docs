@@ -1,4 +1,3 @@
-## 支持项目发展 <!-- {docsify-ignore} -->
 
 如果您喜欢本项目的话，请点一下Star按钮，如果您想要支持本项目的话，可以<a href="https://www.only4.work/about/appreciate/?unfold=1" target="_blank" title="点击打赏">请我喝杯咖啡</a>。
 
@@ -17,4 +16,3 @@
 </div>
 
 <!-- include/reward.md -->
-

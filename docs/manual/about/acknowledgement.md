@@ -1,7 +1,7 @@
 感谢大家对本项目的支持，您的打赏是我们前进的动力！
 
 <details>
-<summary>支持项目发展（点击展开）</summary>
+<summary><span style="font-size: large;"><b>支持项目发展 <!-- {docsify-ignore} --></b></span>（点击展开）</summary>
 
 <!-- 支持项目发展 -->
 [reward](../../include/reward.md ':include')
