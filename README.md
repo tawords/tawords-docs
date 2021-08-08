@@ -18,11 +18,9 @@
 
 ------
 
+# Tawords Documentation
 
-
-# BTaDC Documentation
-
-This is the Git repo for BTaDC documentation. To view the documentation, visit [https://docs.tawords.com/](https://docs.tawords.com/).
+This is the Git repo for Tawords documentation. To view the documentation, visit [https://docs.tawords.com/](https://docs.tawords.com/).
 
 Powered by *[docsify](https://docsify.js.org/#/)*.
 
@@ -37,4 +35,3 @@ If you do not know the steps, you can directly send url and the content you want
 Thank you for your support!
 
 tawords team
-

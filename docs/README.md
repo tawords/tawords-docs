@@ -11,6 +11,13 @@
   <b>背Ta单词</b>
 </p>
 
+<div style="text-align: center;">
+
+<!-- badge -->
+[badge](include/badge.md ':include')
+
+</div>
+
 ------------
 
 <!-- 背Ta单词 简介 -->
