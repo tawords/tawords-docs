@@ -1,4 +1,9 @@
-- [项目主页(暂未上线)](https://tawords.com/ "背Ta单词项目主页")
+- [首页](//tawords.com/ "背Ta单词 网站首页")
+
+- 传送门
+    - [应用中心(暂未上线)](https://app.tawords.com/ "应用中心")
+    - [社区(暂未上线)](https://club.tawords.com/ "社区")
+    - [演示站点(暂未上线)](https://demo.tawords.com/ "演示站点")
 
 - [文档](/README "背Ta单词官方网站")
 	- [快速开始](/manual/start/introduction)
@@ -8,11 +13,6 @@
 	- [应用开发文档](/manual/app-developer/start)
 	- [关于](/manual/about/)
 	- [版本信息](/manual/instructions/start-using)
-
-- 传送门
-    - [应用中心(暂未上线)](https://app.tawords.com/ "应用中心")
-    - [社区(暂未上线)](https://club.tawords.com/ "社区")
-    - [演示站点(暂未上线)](https://demo.tawords.com/ "演示站点")
 
 - [官方运营网站](https://www.reciteword.com/ "背Ta单词官方网站")
 
