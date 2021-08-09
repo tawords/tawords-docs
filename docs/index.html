@@ -132,19 +132,50 @@
 				},
 
 				plugins: [
-					// 添加文档修改时间 和 发现文档中的错误？去Gitee上编辑当前页面
-					function(hook, vm) { // auto_add_update_time_plugin
+					// 添加文档修改时间 和 在Gitee上编辑（发现文档中的错误？去Gitee上编辑当前页面）
+					function(hook, vm) {
 						hook.beforeEach(function(content) {
-							var updateHTML = '<p align="right" style="opacity: 0.6;">更新时间：{docsify-updated}</p>' +
-											 '<p align="center" style="margin: 80px auto;">' +
-											 '<span style="background-color: #c9f0ff; padding: 40px 80px;">发现文档中的错误？有更好的修改建议？' +
-												 '<a href=""></a>去Gitee上编辑当前页面！' +
-											 '<span>' +
-											 '</p>'
-							content = content + updateHTML
-							return content;
+							var url = 'https://gitee.com/tawords/tawords-docs/blob/master/docs/' + vm.route.file;
+							
+							var editHtml = '\n[📝 在Gitee上编辑当前文档](' + url + ')\n';
+							
+							var updateTimeHtml = '\n\n' + '<p align="right" style="opacity: 0.6;">更新时间：{docsify-updated}</p>' + '\n\n';
+
+							var editHtml2 = 
+								'<div style="margin: 80px auto;">' +
+									'<p align="center" style="background-color: #c9f0ff; padding: 40px 10px; line-height: 2.2em;">' +
+										'<nobr>发现文档中的错误？</nobr><nobr>有更好的修改建议？</nobr><br>' +
+										'<a href="' + url + '" target="_blank">📝 在Gitee上编辑当前文档！</a>' +
+									'</p>' +
+								'</div>';
+
+							// Gitee仓库贡献请求Api：
+							// https://gitee.com/api/v5/repos/tawords/tawords/contributors
+							// https://gitee.com/api/v5/repos/tawords/tawords-docs/contributors
+
+							return (
+								editHtml +
+								content +
+								updateTimeHtml +
+								editHtml2
+							);
 						});
 					},
+
+					// 添加footer
+					// function(hook) {
+					// 	var footer = [
+					// 		'<hr/>',
+					// 		'<footer>',
+					// 		'<span><a href="https://github.com/QingWei-Li">cinwell</a> &copy;2017.</span>',
+					// 		'<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+					// 		'</footer>'
+					// 	].join('');
+
+					// 	hook.afterEach(function(html) {
+					// 		return html + footer;
+					// 	});
+					// },
 
 					// 左侧菜单滚动到激活的位置
 					function(hook, vm) {

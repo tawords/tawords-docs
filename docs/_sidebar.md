@@ -8,7 +8,8 @@
 	- [7. 网站备份（需要更新）](/manual/start/backup)
 	- [8. 网站迁移（TODO）](/manual/start/migration)
 	- [9. 目录结构（TODO）](/manual/start/directory-structure)
-	- [10. 常见问题](/manual/start/faq)
+	- [10. 支持平台](/manual/start/platform)
+	- [11. 常见问题](/manual/start/faq)
 
 - **二、使用说明**
 	- [1. 开始使用（撰写中）](/manual/instructions/start-using)
@@ -50,9 +51,9 @@
 
 	- [特别鸣谢](/manual/about/acknowledgement)
 	- [使用的开源组件列表](/manual/about/open-source-project)
-    - [法律声明及服务协议]()
-        - [开源许可证 GPL-3.0](/manual/about/License/GPL-3.0)
-        - [更好的理解 GPL-3.0](/manual/about/License/have-a-better-understanding-of-GPL-3.0)
+    - [法律声明及服务协议](/manual/about/license/README)
+        - [开源许可证 GPL-3.0](/manual/about/license/GPL-3.0)
+            - [更好的理解 GPL-3.0](/manual/about/license/have-a-better-understanding-of-GPL-3.0)
         - 法律声明 policy
             - [版权声明 Copyright](/manual/about/policy/copyright)
             - [免责声明 Disclaimer](/manual/about/policy/disclaimer)
