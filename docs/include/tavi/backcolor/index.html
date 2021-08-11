@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.hidden {
+				display: none;
+			}
+			.contentbox {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="window.location.href=window.location.href">恢复默认值</button>
+		<div>
+			<div class="contentbox">
+				<h1>效果展示</h1>
+				<img src="./logo.png" id="logo" />
+			</div>
+			<div class="contentbox">
+				<h1>参数调整</h1>
+				<p>
+					颜色： <input id="bkcolor_input" type="color" value="#4F3730" onchange="colorChanged(this.value)">
+				</p>
+				<p>
+					圆角： <input id="fillet_input" type="range" value="70.3" min="0" max="100" step="0.01" onchange="radiusChanged(this.value)">
+				</p>
+				<p class="hidden">
+					大小(px)： <input id="size_input" type="range" value="220" min="1" max="1000" step="1" onchange="radiusChanged(this.value)">
+				</p>
+			</div>
+			<div class="contentbox">
+				<h1>当前参数</h1>
+				<p>
+					颜色： <span id="bkcolor_display"></span><br>
+				</p>
+				<p>
+					圆角： <span id="fillet_display"></span><br>
+				</p>
+				<p class="hidden">
+					大小(px)： <span id="size_display"></span><br>
+				</p>
+			</div>
+		</div>
+		
+		<script>
+			console.log(document.getElementById('logo').style)
+			
+			var logo = document.getElementById('logo')
+			
+			// 背景颜色
+			var bkcolor_input = document.getElementById("bkcolor_input")
+			var bkcolor_display = document.getElementById("bkcolor_display")
+			function colorChanged(val) {
+				logo.style.backgroundColor=val
+				bkcolor_display.innerHTML = val + " | " + logo.style.backgroundColor
+			}
+			
+			// 圆角
+			var fillet_input = document.getElementById("fillet_input")
+			var fillet_display = document.getElementById("fillet_display")
+			function radiusChanged(val) {
+				logo.style.borderRadius=val/2+"%"
+				fillet_display.innerHTML = val + "%"
+			}
+			
+			// 大小
+			var size_input = document.getElementById("size_input")
+			var size_display = document.getElementById("size_display")
+			function lengthChanged(val) {
+				logo.style.width=val+"px"
+				size_display.innerHTML = val + "px"
+			}
+			
+			// 刷新
+			setInterval(function () {
+				colorChanged( document.getElementById("bkcolor_input").value )
+				radiusChanged( document.getElementById("fillet_input").value )
+				lengthChanged( document.getElementById("size_input").value )
+			}, 60)
+		</script>
+		
+	</body>
+</html>

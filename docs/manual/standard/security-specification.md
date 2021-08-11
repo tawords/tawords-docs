@@ -1,10 +1,13 @@
-# 登录：
+## 注册、登录时密码使用的加密技术
+
+### 登录
+
 > 使用`密码加盐`生成不可逆哈希，**他人无法获取密码原文**。
 ```javascript
 md5.hex(pwd + md5.hex(pwd));
 ```
 
-# 注册：
+### 注册
 > 使用密码倒序`Base64`加密，再倒序`Base64`加密，避免密码在网上裸奔。
 ```javascript
 Base64.encode(Base64.encode(pwd.split('').reverse().join('')).split('').reverse().join(''));
