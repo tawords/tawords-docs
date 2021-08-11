@@ -4,6 +4,10 @@
 <!-- 项目开发进度 -->
 [contact](include/development-progress.md ':include')
 
+?> 温馨提示：项目开发最初几代版本功能较为单一，更多功能将在后期迭代中加入，敬请期待！
+
+
+
 <p align="center">
   <!-- <a href="https://tawords.com" target="_blank"> -->
     <img alt="背Ta单词 | tawords" src="/static/images/tawords_logo_2000x2000_1.png" height="128">
