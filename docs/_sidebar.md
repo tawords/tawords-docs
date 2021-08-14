@@ -70,20 +70,18 @@
 	- [使用的开源组件列表](/manual/about/open-source-project)
     - <span style="font-weight: normal;">法律声明及服务协议</span>
 
-        - [开源许可证 GPL-3.0](/manual/about/license/GPL-3.0)
+        - [开源许可证](/manual/about/license/MIT)
 
-            - [更好的理解 GPL-3.0](/manual/about/license/have-a-better-understanding-of-GPL-3.0)
+        - <span style="font-weight: normal;">法律声明</span>
 
-        - <span style="font-weight: normal;">法律声明 policy</span>
+            - [版权声明](/manual/about/policy/copyright)
+            - [免责声明](/manual/about/policy/disclaimer)
 
-            - [版权声明 Copyright](/manual/about/policy/copyright)
-            - [免责声明 Disclaimer](/manual/about/policy/disclaimer)
+        - <span style="font-weight: normal;">服务协议</span>
 
-        - <span style="font-weight: normal;">服务协议 agreement</span>
-
-            - [服务条款 Terms of use](/manual/about/agreement/terms-of-use)
-            - [隐私政策 Privacy policy](/manual/about/agreement/privacy-policy)
-
+            - [服务条款](/manual/about/agreement/terms-of-use)
+            - [隐私政策](/manual/about/agreement/privacy-policy)
+    
   - [使用的第三方接口](/manual/about/third-party-interface)
 
 - **七、内部开发文档**

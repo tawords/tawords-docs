@@ -15,4 +15,4 @@
     }
   }
 </style>
-[GPL-3.0 LICENSE](./GPL-3.0%20LICENSE ':include :type=code text')
+[MIT LICENSE](./MIT%20LICENSE ':include :type=code text')
