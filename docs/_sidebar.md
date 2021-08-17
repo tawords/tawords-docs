@@ -40,7 +40,7 @@
 		- [名称规范](/manual/standard/logo/name)
 		- [视觉形象系统](/manual/standard/logo/tavi)
 
-	- [代码规范](/manual/standard/code-specification)
+	- [编码规范](/manual/standard/code-specification)
 
 	- [隐私安全](/manual/standard/security-specification)
 

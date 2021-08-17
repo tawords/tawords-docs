@@ -1,4 +1,4 @@
-## 视觉形象系统 <!-- {docsify-ignore} -->
+<!-- ## 视觉形象系统  {docsify-ignore} -->
 
 为了体现出更好的视觉形象，更有利于视觉形象传播，同时更能展现出项目团队精神，特此研发**背Ta单词视觉形象识别系统**（**Tawords Visual Identity System**，简称“**TAVI**”）。
 
