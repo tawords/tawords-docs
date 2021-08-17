@@ -37,8 +37,8 @@
 
 	- <span style="font-weight: normal;">标识规范</span>
 
-		- [名称规范](/manual/standard/logo-specification/name)
-		- [视觉形象系统](/manual/standard/logo-specification/tavi)
+		- [名称规范](/manual/standard/logo/name)
+		- [视觉形象系统](/manual/standard/logo/tavi)
 
 	- [代码规范](/manual/standard/code-specification)
 
@@ -82,9 +82,11 @@
             - [服务条款](/manual/about/agreement/terms-of-use)
             - [隐私政策](/manual/about/agreement/privacy-policy)
     
-  - [使用的第三方接口](/manual/about/third-party-interface)
+    - [使用的第三方接口](/manual/about/third-party-interface)
 
 - **七、内部开发文档**
+
+    - [安装升级向导](/manual/internal/deployment-wizard)
 
 - **八、其他**
 
