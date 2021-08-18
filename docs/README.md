@@ -36,11 +36,11 @@
 
 | 背Ta单词 | 网址 |
 |------|------|
-| 代码仓库 |  <a href="https://gitee.com/only4/tawords/" target="_blank">Gitee（推荐）</a>  <a href="https://github.com/only4/tawords/" target="_blank">GitHub（暂未上线）</a> |
-| 项目主页（暂未上线） | <a href="https://tawords.com/" target="_blank">tawords.com</a> |
+| 代码仓库 |  <a href="https://gitee.com/tawords/tawords/" target="_blank">Gitee（推荐）</a>  <a href="https://github.com/tawords/tawords/" target="_blank">GitHub（暂未上线）</a> |
+| 官方网站 | <a href="https://tawords.com/" target="_blank">tawords.com</a> |
 | 应用中心（暂未上线） | <a href="https://app.tawords.com/" target="_blank">app.tawords.com</a> |
 | 演示站点（暂未上线） | <a href="https://demo.tawords.com/" target="_blank">demo.tawords.com</a> |
-| 社区（暂未上线） | <a href="https://club.tawords.com/" target="_blank">club.tawords.com</a> |
+| 社区 | <a href="https://club.tawords.com/" target="_blank">club.tawords.com</a> |
 | 官方运营网站 | <a href="https://reciteword.com/" target="_blank">reciteword.com</a> |
 
 ------------

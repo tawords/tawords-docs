@@ -87,8 +87,8 @@
 - **七、背Ta单词内部开发文档**
 
     - [安装升级向导 官网接口](/manual/internal/deployment-wizard)
-    - [官网首页伪静态配置规则](/manual/internal/pseudo-static)
     - [检查SSL证书过期时间[PHP]](/manual/internal/check-cert)
+    - [官网首页伪静态配置规则](/manual/internal/pseudo-static)
 
 - **八、其他**
 

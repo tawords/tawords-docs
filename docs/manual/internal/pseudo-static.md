@@ -19,22 +19,36 @@ location ~ ^/(\.user.ini|\.htaccess|\.git|\.svn|\.project)                     #
 
 > 2021.08.18更新
 
-http跳转https；www跳转@；访问二级域名指向网站的二级路径
+http跳转https
 
 ```nginx
 # http跳转https
 if ($server_port !~ 443){
   rewrite ^(/.*)$ https://$host$1 permanent;
 }
+```
+www跳转@
+
+```nginx
+# $host        = www.reciteword.com
+# $1           = reciteword.com
+# $request_uri = 请求参数
+# return 301 https://reciteword.com$request_uri;
 
 # 👇www跳转@
-if ($host ~* "^www\.(.*?\..*?)$") # if ($host = 'www.reciteword.com')
+if ($host ~* "^www\.(.*)$")
 {
-  # $host = www.reciteword.com
-  # $1 = reciteword.com
-  return 301 https://$1; # https://reciteword.com$request_uri;
+  return 301 https://$1$request_uri;
 }
+```
 
+-----
+
+【以下弃用】
+
+访问二级域名指向网站的二级路径（纯静态网页可以，PHP页面会出404 Not Found）
+
+```nginx
 location ~ {
   index index.php index.html index.htm;
  
